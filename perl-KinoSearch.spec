@@ -48,5 +48,5 @@ rm -rf %buildroot
 %doc README Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
-/usr/lib/debug/usr/lib/perl5/vendor_perl/5.10.1/x86_64-linux-thread-multi/auto/KinoSearch/KinoSearch.so.debug
+/usr/lib/debug/usr/lib/perl5/vendor_perl/*
 /usr/src/debug/*
