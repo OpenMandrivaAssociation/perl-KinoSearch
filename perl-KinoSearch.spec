@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Surround highlight bits with tags
 License:    GPL+ or Artistic
@@ -48,5 +48,3 @@ rm -rf %buildroot
 %doc README Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
-/usr/lib/debug/usr/lib/perl5/vendor_perl/*
-/usr/src/debug/*
