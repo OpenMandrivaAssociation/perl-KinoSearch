@@ -41,3 +41,28 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc README Changes
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
+
+%changelog
+* Sun Feb 12 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.165.0-5
++ Revision: 773604
+- cleanout spec
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+  + Jérôme Quelin <jquelin@mandriva.org>
+    - rebuild for perl 5.12
+    - rebuild
+
+* Fri Mar 12 2010 Jérôme Quelin <jquelin@mandriva.org> 0.165.0-2mdv2010.1
++ Revision: 518458
+- ship debug files in -debug
+
+* Mon Nov 30 2009 Jérôme Quelin <jquelin@mandriva.org> 0.165.0-1mdv2010.1
++ Revision: 471664
+- no arch-dep files should be mentioned in %%files
+- module is binary, not noarch
+- import perl-KinoSearch
+
+
+* Sun Nov 29 2009 cpan2dist 0.165-1mdv
+- initial mdv release, generated with cpan2dist
