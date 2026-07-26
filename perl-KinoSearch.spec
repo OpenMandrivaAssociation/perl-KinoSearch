@@ -1,15 +1,13 @@
 %define upstream_name KinoSearch
-%define upstream_version 0.165
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	7
+Version:	0.165
+Release:	8
 
 Summary:	Surround highlight bits with tags
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module//%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module//%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(Compress::Zlib)
@@ -26,7 +24,7 @@ written in Perl and C. The archetypal application is website search, but it
 can be put to many different uses.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
